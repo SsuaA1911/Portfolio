@@ -5,6 +5,7 @@
   --color-yello: #FF9F00;
   --color-orange: #F4631E;
   --color-red: #CB0404;
+  --font-Mplus: 'M PLUS Rounded 1c', sans-serif;
 }
 body{
   font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -17,12 +18,12 @@ h1{
   font-weight: 900;
 }
 h2{
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 800;
   
 }
 h3{
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 p{
