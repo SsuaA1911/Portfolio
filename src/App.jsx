@@ -29,7 +29,7 @@ function App() {
             <div className="flex items-center gap-2">
               <h2 className=" md:text-3xl flex">Hello, my name is Tiger</h2>
               <img
-                src="/src/assets/art/icons8-tiger-100.png"
+                src="/public/art/icons8-tiger-100.png"
                 className="w-10"
               />
             </div>
@@ -59,46 +59,46 @@ function App() {
             </h2>
             <div className="grid  grid-cols-3  lg:grid-cols-5 xl:grid-cols-6 lg:w-[600px] gap-4 py-4 w-fit">
               <div className="flex justify-center items-center w-[80px] h-[80px] bg-white rounded-[5px]  ">
-                <img src="/src/assets/art/react.svg" alt="React" />
+                <img src="/public/art/react.svg" alt="React" />
               </div>
               <div className="flex justify-center items-center w-[80px] h-[80px] bg-orange-300 rounded-[5px]">
-                <img src="/src/assets/art/html.svg" alt="HTML" />
+                <img src="/public/art/html.svg" alt="HTML" />
               </div>
               <div className="flex justify-center items-center w-[80px] h-[80px] bg-pink-300 rounded-[5px]">
-                <img src="/src/assets/art/css.svg" alt="CSS" />
+                <img src="/public/art/css.svg" alt="CSS" />
               </div>
               <div className="flex justify-center items-center w-[80px] h-[80px] bg-yellow-500 rounded-[5px]">
-                <img src="/src/assets/art/js.svg" alt="JavaScript" />
+                <img src="/public/art/js.svg" alt="JavaScript" />
               </div>
               <div className="flex justify-center items-center w-[80px] h-[80px] bg-green-200 rounded-[5px]">
                 <img
-                  src="/src/assets/art/nodejs.svg"
+                  src="/public/art/nodejs.svg"
                   alt="Node.js"
                   className="w-[70px]"
                 />
               </div>
               <div className="flex justify-center items-center w-[80px] h-[80px] rounded-[5px]">
                 <img
-                  src="/src/assets/art/mongodb.png"
+                  src="/public/art/mongodb.png"
                   alt="MongoDB"
                   className="rounded-[5px]"
                 />
               </div>
               <div className="flex justify-center items-center w-[80px] h-[80px] bg-blue-200 rounded-[5px]">
                 <img
-                  src="/src/assets/art/sql-server.png"
+                  src="/public/art/sql-server.png"
                   alt="SQL Server"
                   className="w-[70px]"
                 />
               </div>
               <div className="flex justify-center items-center w-[80px] h-[80px] bg-white rounded-[5px]">
-                <img src="/src/assets/art/git.svg" alt="Git" />
+                <img src="/public/art/git.svg" alt="Git" />
               </div>
               <div className="flex justify-center items-center w-[80px] h-[80px] bg-blue-50 rounded-[5px]">
-                <img src="/src/assets/art/tailwind.svg" alt="Tailwind CSS" />
+                <img src="/public/art/tailwind.svg" alt="Tailwind CSS" />
               </div>
               <div className="flex justify-center items-center w-[80px] h-[80px] bg-orange-200 rounded-[5px]">
-                <img src="/src/assets/art/figma.svg" alt="Figma" />
+                <img src="/public/art/figma.svg" alt="Figma" />
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@ function App() {
           <div className="mt-3 grid grid-cols-1 lg:grid-cols-3 gap-4">
             {/* ใส่โปรเจกต์ตรงนี้ */}
             <div className="w-[250px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg ">
-              <img src="/src/assets/art/colmar.gif" />
+              <img src="/public/art/colmar.gif" />
 
               <div className="mt-2">
                 <h4>Colmar Academy</h4>
@@ -135,7 +135,7 @@ function App() {
                     <span className="gap-2 flex justify-center items-center">
                       Link
                       <img
-                        src="/src/assets/art/link.svg"
+                        src="/public/art/link.svg"
                         alt="link"
                         className="w-5 h-5"
                       />
@@ -150,7 +150,7 @@ function App() {
                     <span className="gap-2 flex justify-center items-center">
                       Link
                       <img
-                        src="/src/assets/art/git.svg"
+                        src="/public/art/git.svg"
                         alt="GitHub"
                         className="w-5 h-5"
                       />
@@ -160,7 +160,7 @@ function App() {
               </div>
             </div>
             <div className="w-[250px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg ">
-              <img src="/src/assets/art/dragon.gif" />
+              <img src="/public/art/dragon.gif" />
 
               <div className="mt-2">
                 <h4>Dragon Ball</h4>
@@ -182,7 +182,7 @@ function App() {
                     <span className="gap-2 flex justify-center items-center">
                       Link
                       <img
-                        src="/src/assets/art/link.svg"
+                        src="/public/art/link.svg"
                         alt="link"
                         className="w-5 h-5"
                       />
@@ -197,7 +197,7 @@ function App() {
                     <span className="gap-2 flex justify-center items-center">
                       Link
                       <img
-                        src="/src/assets/art/git.svg"
+                        src="/public/art/git.svg"
                         alt="GitHub"
                         className="w-5 h-5"
                       />
@@ -207,7 +207,7 @@ function App() {
               </div>
             </div>
             <div className="w-[250px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg ">
-              <img src="/src/assets/art/mini.gif" />
+              <img src="/public/art/mini.gif" />
 
               <div className="mt-2">
                 <h4>Note App</h4>
@@ -231,7 +231,7 @@ function App() {
                     <span className="gap-2 flex justify-center items-center">
                       Link
                       <img
-                        src="/src/assets/art/link.svg"
+                        src="/public/art/link.svg"
                         alt="link"
                         className="w-5 h-5"
                       />
@@ -246,7 +246,7 @@ function App() {
                     <span className="gap-2 flex justify-center items-center">
                       Link
                       <img
-                        src="/src/assets/art/git.svg"
+                        src="/public/art/git.svg"
                         alt="GitHub"
                         className="w-5 h-5"
                       />
@@ -256,7 +256,7 @@ function App() {
               </div>
             </div>
             <div className="w-[250px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg ">
-              <img src="/src/assets/art/reactAssessment.gif" />
+              <img src="/public/art/reactAssessment.gif" />
 
               <div className="mt-2">
                 <h4>React Assessment</h4>
@@ -280,7 +280,7 @@ function App() {
                     <span className="gap-2 flex justify-center items-center">
                       Link
                       <img
-                        src="/src/assets/art/link.svg"
+                        src="/public/art/link.svg"
                         alt="link"
                         className="w-5 h-5"
                       />
@@ -295,7 +295,7 @@ function App() {
                     <span className="gap-2 flex justify-center items-center">
                       Link
                       <img
-                        src="/src/assets/art/git.svg"
+                        src="/public/art/git.svg"
                         alt="GitHub"
                         className="w-5 h-5"
                       />
@@ -305,7 +305,7 @@ function App() {
               </div>
             </div>
             <div className="w-[250px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg ">
-              <img src="/src/assets/art/Spicy-Cobra.gif" />
+              <img src="/public/art/Spicy-Cobra.gif" />
 
               <div className="mt-2">
                 <h4>Spicy Cobra</h4>
@@ -329,7 +329,7 @@ function App() {
                     <span className="gap-2 flex justify-center items-center">
                       Link
                       <img
-                        src="/src/assets/art/link.svg"
+                        src="/public/art/link.svg"
                         alt="link"
                         className="w-5 h-5"
                       />
@@ -344,7 +344,7 @@ function App() {
                     <span className="gap-2 flex justify-center items-center">
                       Link
                       <img
-                        src="/src/assets/art/git.svg"
+                        src="/public/art/git.svg"
                         alt="GitHub"
                         className="w-5 h-5"
                       />
@@ -357,7 +357,7 @@ function App() {
         </div>
       </main>
 
-      <footer className="bg-orange h-[100px] mt-8"></footer>
+      <footer className=" h-[100px] mt-8"></footer>
     </div>
   );
 }
