@@ -359,11 +359,13 @@ function App() {
             <div className="flex justify-center items-center gap-2 mt-4">
               <input
                 type="text"
+                name="name"
                 placeholder="Your Name"
                 className="border border-gray-300 rounded-md p-2 w-[150px] lg:w-[450px] lg:h-[80px] bg-yellow-100 lg:text-2xl"
               />
               <input
                 type="email"
+                name="email"
                 placeholder="Your Email"
                 className="border border-gray-300 rounded-md p-2 w-[150px] lg:w-[450px] lg:h-[80px] bg-yellow-100 lg:text-2xl"
               />
@@ -371,6 +373,7 @@ function App() {
             <div className="flex justify-center items-center gap-2 mt-4">
               <textarea
                 placeholder="Your Message"
+                name="message"
                 className="border border-gray-300 rounded-md p-2 w-[300px] lg:w-[900px] h-[100px] lg:h-[200px] bg-yellow-100 lg:text-2xl"
               ></textarea>
             </div>
