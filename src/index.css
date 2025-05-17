@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap');
+@import "tailwindcss";
+@theme{
+  --color-green: #309898;
+  --color-yello: #FF9F00;
+  --color-orange: #F4631E;
+  --color-red: #CB0404;
+}
+body{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  color: #010000;
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+h1{
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+h2{
+  font-size: 1.2rem;
+  font-weight: 800;
+  
+}
+h3{
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+p{
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+h4{
+  font-size: 0.8rem;
+  font-weight: 800;
+}
