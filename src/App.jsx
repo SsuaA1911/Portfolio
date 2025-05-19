@@ -531,7 +531,7 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className=" w-[108px] h-[30px] bg-blue-200 rounded-[40px] flex  items-center  justify-center gap-1">
+                  <div className=" w-[108px] h-[30px] bg-blue-200  hover:bg-blue-400 rounded-[40px] flex  items-center  justify-center gap-1">
                     <span className="text-[14px]">Linkedin</span>
                     <img
                       src="/art/linkedin.svg"
@@ -545,7 +545,7 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className=" w-[108px] h-[30px] bg-emerald-300 rounded-[40px] flex  items-center justify-center gap-2">
+                  <div className=" w-[108px] h-[30px] bg-emerald-300 hover:bg-emerald-500 rounded-[40px] flex  items-center justify-center gap-2">
                     <span className=" text-[14px]">Github</span>
                     <img src="/art/git.svg" alt="" className="w-[34px]" />
                   </div>
@@ -555,7 +555,7 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className=" w-[108px] h-[30px] bg-purple-300 rounded-[40px] flex  items-center justify-center gap-2">
+                  <div className=" w-[108px] h-[30px] bg-purple-300   hover:bg-purple-500 rounded-[40px] flex  items-center justify-center gap-2">
                     <span className="text-[14px]">Resume</span>
                     <img
                       src="/art/icon-tiger.png"
