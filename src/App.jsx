@@ -1,11 +1,12 @@
 import MobileMenu from "./components/Mobilemenu.jsx";
+import TigerGroup from "./components/MotionTigerJump.jsx";
+import Hero from "./components/Typed.jsx";
 
 function App() {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-      setIsOpen(false);
     }
   };
 
@@ -54,10 +55,13 @@ function App() {
               </span>
             </li>
             <li>
-              <div className="flex items-center gap-6 bg-blue-400 hover:bg-pink-200 rounded-3xl px-3  ">
+              <div
+                className="flex items-center gap-6 bg-blue-400 hover:bg-pink-200 rounded-3xl px-3 "
+                onClick={() => scrollToSection("contact")}
+              >
                 <img
                   src="/art/icon-email.png"
-                  onClick={() => scrollToSection("contact")}
+                  alt="email"
                   className="inline-block w-[50px] font-extrabold hover:scale-110 transition-transform duration-300 "
                 />
                 <span className="text-2xl underline pr-2">Say hi</span>
@@ -123,31 +127,26 @@ function App() {
             </div>
           </div>
         </div>
-        <div id="home" className="mt-[-500px] px-4 md:px-8 max-w-screen-xl mx-auto">
+        <div
+          id="home"
+          className="lg:mt-[-500px] px-4 md:px-8 max-w-screen-xl mx-auto"
+        >
           {/* About Me */}
           <div className="flex flex-col items-center mt-10">
-            <div className="flex items-center gap-2">
-              <h2 className=" sm:hidden">Hello, my name is Tiger</h2>
-              <h1 className=" hidden md:flex sm:hidden my-10 mt-20  ">
-                Hello, my name is Tiger
-              </h1>
-              <img
-                src="/art/icons8-tiger-100.png"
-                className=" w-10 lg:w-20 lg:my-10 lg:mt-20"
-              />
-            </div>
-            <h1 className=" hidden md:flex sm:hidden   ">
-              I'm a Junior Software Developer.
-            </h1>
-            <h2 className="  sm:hidden ml-7 ">
-              I'm a Junior Software Developer.
-            </h2>
+            <Hero />
           </div>
+
           <div
             id="about"
-            className="hidden lg:flex md:hidden flex-col items-center mt-20"
+            className=" hidden lg:flex justify-center items-center gap-2 mt-4 lg:mt-20 sm:hidden"
           >
-            <img src="/art/three-tiger.png" alt="" />
+            <a
+              href="https://www.youtube.com/watch?v=6td_lXTEvfk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <TigerGroup />
+            </a>
           </div>
           <div className="flex flex-col mt-10  items-center lg:pt-20">
             <h2 className=" sm:hidden  bg-orange rounded-[5px]  px-2 mb-4 max-w-max text-lg md:text-xl">
@@ -223,7 +222,7 @@ function App() {
             </div>
           </div>
 
-          {/* Projects */}
+          {/* Projects --------------------------------------------------------------------------------------------------------------*/}
 
           <h2 className=" sm:hidden  bg-orange rounded-[5px] pb-1 px-2 mb-4 max-w-max text-lg  mt-8 mx-auto">
             My Project
@@ -231,9 +230,15 @@ function App() {
           <h1 className=" hidden md:flex sm:hidden  bg-orange rounded-[5px] pb-1 px-2 max-w-max text-lg  my-10 mt-20 mx-auto">
             My Project
           </h1>
-          <div className="mt-10 w-max-full grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 lg:gap-x-10 lg:gap-y-10">
+          <div className="mt-10 w-max-full grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 lg:gap-x-10 gap-y-10">
             <div className=" w-[300px] h-auto  bg-yellow-100 rounded-md flex  flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[350px]  hover:scale-110 transition-transform duration-400">
-              <video  className="w-full h-auto rounded-md"  autoPlay loop muted playsInline>
+              <video
+                className="w-full h-auto rounded-md"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
                 <source src="/art/colmar.mp4" type="video/mp4" />
               </video>
 
@@ -256,7 +261,7 @@ function App() {
                     href="https://20-sua-colmar.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-yello rounded-md px-[1.5rem]   max-w-[10rem] h-[2rem] lg:h-[3rem] flex items-center mt-2"
+                    className="bg-yello  hover:bg-amber-600 rounded-md px-[1.5rem]   max-w-[10rem] h-[2rem] lg:h-[3rem] flex items-center mt-2"
                   >
                     <span className="gap-2 flex justify-center items-center">
                       <h3>Link</h3>
@@ -267,7 +272,7 @@ function App() {
                     href="https://github.com/SsuaA1911/20-sua-colmar"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-yello rounded-md px-[1.5rem] max-w-[10rem] h-[2rem] lg:h-[3rem] flex items-center mt-2"
+                    className="bg-yello hover:bg-amber-600   rounded-md px-[1.5rem] max-w-[10rem] h-[2rem] lg:h-[3rem] flex items-center mt-2"
                   >
                     <span className="gap-2 flex justify-center items-center">
                       <h3>Github</h3>
@@ -282,7 +287,13 @@ function App() {
               </div>
             </div>
             <div className=" w-[300px] h-auto bg-yellow-100 rounded-md flex  flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[350px] hover:scale-110 transition-transform duration-400">
-              <video  className="w-full h-auto rounded-md"  autoPlay loop muted playsInline>
+              <video
+                className="w-full h-auto rounded-md"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
                 <source src="/art/dragon-ball.mp4" type="video/mp4" />
               </video>
 
@@ -305,7 +316,7 @@ function App() {
                     href="https://dragonball-six.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-yello rounded-md px-[1.5rem]   max-w-[10rem] h-[2rem] lg:h-[3rem]  flex items-center mt-2"
+                    className="bg-yello hover:bg-amber-600  rounded-md px-[1.5rem]   max-w-[10rem] h-[2rem] lg:h-[3rem]  flex items-center mt-2"
                   >
                     <span className="gap-2 flex justify-center items-center">
                       <h3>Link</h3>
@@ -316,7 +327,7 @@ function App() {
                     href="https://github.com/SsuaA1911/dragonball"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-yello rounded-md px-[1.5rem]   max-w-[10rem] h-[2rem] lg:h-[3rem]  flex items-center mt-2"
+                    className="bg-yello hover:bg-amber-600  rounded-md px-[1.5rem]   max-w-[10rem] h-[2rem] lg:h-[3rem]  flex items-center mt-2"
                   >
                     <span className="gap-2 flex justify-center items-center">
                       <h3>
@@ -333,7 +344,13 @@ function App() {
               </div>
             </div>
             <div className=" w-[300px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[350px] hover:scale-110 transition-transform duration-400">
-              <video  className="w-full h-auto rounded-md"  autoPlay loop muted playsInline>
+              <video
+                className="w-full h-auto rounded-md"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
                 <source src="/art/miniproject.mp4" type="video/mp4" />
               </video>
 
@@ -356,7 +373,7 @@ function App() {
                     href="https://mini-project-frontend-sage.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-yello rounded-md px-[1.5rem]   max-w-[10rem] h-[2rem] lg:h-[3rem]  flex items-center mt-2"
+                    className="bg-yello hover:bg-amber-600  rounded-md px-[1.5rem]   max-w-[10rem] h-[2rem] lg:h-[3rem]  flex items-center mt-2"
                   >
                     <span className="gap-2 flex justify-center items-center">
                       <h3>Link</h3>
@@ -367,7 +384,7 @@ function App() {
                     href="https://github.com/SsuaA1911/miniProjectFrontend"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-yello rounded-md px-[1.5rem]   max-w-[10rem] h-[2rem] lg:h-[3rem]  flex items-center mt-2"
+                    className="bg-yello hover:bg-amber-600  rounded-md px-[1.5rem]   max-w-[10rem] h-[2rem] lg:h-[3rem]  flex items-center mt-2"
                   >
                     <span className="gap-2 flex justify-center items-center">
                       <h3>Github</h3>
@@ -381,8 +398,14 @@ function App() {
                 </div>
               </div>
             </div>
-            <div  className=" w-[300px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[350px]  hover:scale-110 transition-transform duration-400">
-              <video  className="w-full h-auto rounded-md"  autoPlay loop muted playsInline>
+            <div className=" w-[300px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[350px]  hover:scale-110 transition-transform duration-400">
+              <video
+                className="w-full h-auto rounded-md"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
                 <source src="/art/React-Assessment.mp4" type="video/mp4" />
               </video>
 
@@ -405,7 +428,7 @@ function App() {
                     href="https://react-assessment-20.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-yello rounded-md px-[1.5rem]   max-w-[10rem] h-[2rem] lg:h-[3rem]  flex items-center mt-2"
+                    className="bg-yello   hover:bg-amber-600  rounded-md px-[1.5rem]   max-w-[10rem] h-[2rem] lg:h-[3rem]  flex items-center mt-2"
                   >
                     <span className="gap-2 flex justify-center items-center">
                       <h3>Link</h3>
@@ -416,7 +439,7 @@ function App() {
                     href="https://github.com/SsuaA1911/react-app-starter"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-yello rounded-md px-[1.5rem]   max-w-[10rem] h-[2rem] lg:h-[3rem]  flex items-center mt-2"
+                    className="bg-yello hover:bg-amber-600  rounded-md px-[1.5rem]   max-w-[10rem] h-[2rem] lg:h-[3rem]  flex items-center mt-2"
                   >
                     <span className="gap-2 flex justify-center items-center">
                       <h3>Github</h3>
@@ -431,7 +454,13 @@ function App() {
               </div>
             </div>
             <div className=" w-[300px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[350px] hover:scale-110 transition-transform duration-400">
-              <video  className="w-full h-auto rounded-md"  autoPlay loop muted playsInline>
+              <video
+                className="w-full h-auto rounded-md"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
                 <source src="/art/Spicy-Cobra.mp4" type="video/mp4" />
               </video>
 
@@ -454,7 +483,7 @@ function App() {
                     href="https://jsd9-spicy-cobra-frontend.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-yello rounded-md px-[1.5rem]   max-w-[10rem] h-[2rem] lg:h-[3rem]  flex items-center mt-2"
+                    className="bg-yello hover:bg-amber-600  rounded-md px-[1.5rem]   max-w-[10rem] h-[2rem] lg:h-[3rem]  flex items-center mt-2"
                   >
                     <span className="gap-2 flex justify-center items-center">
                       <h3>Link</h3>
@@ -465,7 +494,7 @@ function App() {
                     href="https://github.com/SsuaA1911/jsd9-spicy-cobra-frontend"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-yello rounded-md px-[1.5rem]   max-w-[10rem] h-[2rem] lg:h-[3rem]  flex items-center mt-2"
+                    className="bg-yello hover:bg-amber-600  rounded-md px-[1.5rem]   max-w-[10rem] h-[2rem] lg:h-[3rem]  flex items-center mt-2"
                   >
                     <span className="gap-2 flex justify-center items-center">
                       <h3>Github</h3>
@@ -483,7 +512,7 @@ function App() {
         </div>
       </main>
 
-      <footer className=" h-auto bg-orange mt-30">
+      <footer className=" h-auto bg-orange mt-10 lg:mt-30">
         <div className=" pt-5 px-4 md:px-8 max-w-screen-xl mx-auto">
           <form action="https://getform.io/f/axowdkvb" method="POST">
             <div
@@ -496,6 +525,46 @@ function App() {
               </h1>
               <img src="/art/icons8-tiger-100.png" className="w-10 lg:w-20" />
             </div>
+            <div className="flex  justify-center gap-4 my-6 sm:hidden ">
+                <a
+                  href="https://www.linkedin.com/in/pongharit-kitudom/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className=" w-[108px] h-[30px] bg-blue-200 rounded-[40px] flex  items-center  justify-center gap-1">
+                    <span className="text-[14px]">Linkedin</span>
+                    <img
+                      src="/art/linkedin.svg"
+                      alt="linkedin"
+                      className="w-[30px] mr-3"
+                    />
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/SsuaA1911"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className=" w-[108px] h-[30px] bg-emerald-300 rounded-[40px] flex  items-center justify-center gap-2">
+                    <span className=" text-[14px]">Github</span>
+                    <img src="/art/git.svg" alt="" className="w-[34px]" />
+                  </div>
+                </a>
+                <a
+                  href="https://www.canva.com/design/DAGjSTJCpLU/9iC3AcvhfrN7Mh__9RaHTA/edit?utm_content=DAGjSTJCpLU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className=" w-[108px] h-[30px] bg-purple-300 rounded-[40px] flex  items-center justify-center gap-2">
+                    <span className="text-[14px]">Resume</span>
+                    <img
+                      src="/art/icon-tiger.png"
+                      alt=""
+                      className="w-[31px]"
+                    />
+                  </div>
+                </a>
+              </div>
             <div className="flex justify-center items-center gap-2 mt-4">
               <input
                 type="text"
