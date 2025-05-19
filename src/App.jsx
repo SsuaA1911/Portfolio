@@ -123,7 +123,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div id="home" className="pt-5 px-4 md:px-8 max-w-screen-xl mx-auto">
+        <div id="home" className="mt-[-500px] px-4 md:px-8 max-w-screen-xl mx-auto">
           {/* About Me */}
           <div className="flex flex-col items-center mt-10">
             <div className="flex items-center gap-2">
