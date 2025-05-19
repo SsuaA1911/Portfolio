@@ -68,56 +68,61 @@ function App() {
       </header>
 
       <main>
-        
         <div className=" sticky top-80 left-0  z-100">
           <div className="hidden lg:flex sm:hidden ">
-          <div className=" w-[300px] ml-[-185px] hover:ml-0 hover:transition-all duration-300  ">
-            <span className="ml-5 text-4xl font-bold  rounded-[5px] px-2">
-              Nice to <br /> <span className=" inline-block ml-6 text-4xl">meet you.</span>
-            </span>
-            <img
-              src="/art/tiger-sleep.png"
-              alt="tigerSayhi"
-              className="ml-[-20px]"
-            />
-            <div className="flex flex-col justify-center gap-4 ">
-              <a
-                href="https://www.linkedin.com/in/pongharit-kitudom/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className=" w-[250px] h-[70px] bg-blue-200 rounded-[40px] flex  items-center ml-[-30px] justify-end gap-5">
-                  <h2>Linkedin</h2>
-                  <img
-                    src="/art/linkedin.svg"
-                    alt=""
-                    className="w-[55px] mr-3"
-                  />
-                </div>
-              </a>
-              <a
-                href="https://github.com/SsuaA1911"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className=" w-[250px] h-[70px] bg-emerald-300 rounded-[40px] flex  items-center ml-[-30px] justify-end gap-7">
-                  <h2>Github</h2>
-                  <img src="/art/git.svg" alt="" className="w-[70px]" />
-                </div>
-              </a>
-              <a
-                href="https://www.canva.com/design/DAGjSTJCpLU/9iC3AcvhfrN7Mh__9RaHTA/edit?utm_content=DAGjSTJCpLU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className=" w-[250px] h-[70px] bg-purple-300 rounded-[40px] flex  items-center ml-[-30px] justify-end gap-7">
-                  <h2>Resume</h2>
-                  <img src="/art/icon-tiger.png" alt="" className="w-[65px]" />
-                </div>
-              </a>
+            <div className=" w-[300px] ml-[-185px] hover:ml-0 hover:transition-all duration-300  ">
+              <span className="ml-5 text-4xl font-bold  rounded-[5px] px-2">
+                Nice to <br />{" "}
+                <span className=" inline-block ml-6 text-4xl">meet you.</span>
+              </span>
+              <img
+                src="/art/tiger-sleep.png"
+                alt="tigerSayhi"
+                className="ml-[-20px]"
+              />
+              <div className="flex flex-col justify-center gap-4 ">
+                <a
+                  href="https://www.linkedin.com/in/pongharit-kitudom/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className=" w-[250px] h-[70px] bg-blue-200 rounded-[40px] flex  items-center ml-[-30px] justify-end gap-5">
+                    <h2>Linkedin</h2>
+                    <img
+                      src="/art/linkedin.svg"
+                      alt=""
+                      className="w-[55px] mr-3"
+                    />
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/SsuaA1911"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className=" w-[250px] h-[70px] bg-emerald-300 rounded-[40px] flex  items-center ml-[-30px] justify-end gap-7">
+                    <h2>Github</h2>
+                    <img src="/art/git.svg" alt="" className="w-[70px]" />
+                  </div>
+                </a>
+                <a
+                  href="https://www.canva.com/design/DAGjSTJCpLU/9iC3AcvhfrN7Mh__9RaHTA/edit?utm_content=DAGjSTJCpLU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className=" w-[250px] h-[70px] bg-purple-300 rounded-[40px] flex  items-center ml-[-30px] justify-end gap-7">
+                    <h2>Resume</h2>
+                    <img
+                      src="/art/icon-tiger.png"
+                      alt=""
+                      className="w-[65px]"
+                    />
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
-        </div></div>
+        </div>
         <div id="home" className="pt-5 px-4 md:px-8 max-w-screen-xl mx-auto">
           {/* About Me */}
           <div className="flex flex-col items-center mt-10">
@@ -177,42 +182,42 @@ function App() {
               id="projects"
               className="grid  grid-cols-3  mx-auto xl:grid-cols-6 lg:w-[600px] gap-4 lg:gap-x-[200px] lg:gap-y-10 py-4 w-fit md:ml-15 "
             >
-              <div className="flex justify-center items-center lg:w-[150px] lg:h-[150px] w-[80px] h-[80px] bg-white rounded-[5px]  ">
+              <div className="flex justify-center items-center lg:w-[150px] lg:h-[150px] shadow-md w-[80px] h-[80px] bg-white rounded-[5px] hover:scale-110 transition-transform duration-400 ">
                 <img src="/art/react.svg" alt="React" />
               </div>
-              <div className="flex justify-center items-center lg:w-[150px] lg:h-[150px]  w-[80px] h-[80px] bg-orange-300 rounded-[5px]">
+              <div className="flex justify-center items-center lg:w-[150px] lg:h-[150px] shadow-md  w-[80px] h-[80px] bg-orange-300 rounded-[5px] hover:scale-110 transition-transform duration-400">
                 <img src="/art/html.svg" alt="HTML" />
               </div>
-              <div className="flex justify-center items-center lg:w-[150px] lg:h-[150px]  w-[80px] h-[80px] bg-pink-300 rounded-[5px]">
+              <div className="flex justify-center items-center lg:w-[150px] lg:h-[150px] shadow-md  w-[80px] h-[80px] bg-pink-300 rounded-[5px] hover:scale-110 transition-transform duration-400">
                 <img src="/art/css.svg" alt="CSS" />
               </div>
-              <div className="flex justify-center items-center lg:w-[150px] lg:h-[150px]  w-[80px] h-[80px] bg-yellow-500 rounded-[5px]">
+              <div className="flex justify-center items-center lg:w-[150px] lg:h-[150px] shadow-md  w-[80px] h-[80px] bg-yellow-500 rounded-[5px] hover:scale-110 transition-transform duration-400">
                 <img src="/art/js.svg" alt="JavaScript" />
               </div>
-              <div className="flex justify-center items-center lg:w-[150px] lg:h-[150px]  w-[80px] h-[80px] bg-green-200 rounded-[5px]">
+              <div className="flex justify-center items-center lg:w-[150px] lg:h-[150px] shadow-md  w-[80px] h-[80px] bg-green-200 rounded-[5px] hover:scale-110 transition-transform duration-400">
                 <img src="/art/nodejs.svg" alt="Node.js" className="w-[70px]" />
               </div>
-              <div className="flex justify-center items-center lg:w-[150px] lg:h-[150px]  w-[80px] h-[80px] rounded-[5px]">
+              <div className="flex justify-center items-center lg:w-[150px] lg:h-[150px] shadow-md  w-[80px] h-[80px] rounded-[5px] hover:scale-110 transition-transform duration-400">
                 <img
                   src="/art/mongodb.png"
                   alt="MongoDB"
                   className="rounded-[5px]"
                 />
               </div>
-              <div className="flex justify-center items-center lg:w-[150px] lg:h-[150px]  w-[80px] h-[80px] bg-blue-200 rounded-[5px]">
+              <div className="flex justify-center items-center lg:w-[150px] lg:h-[150px] shadow-md  w-[80px] h-[80px] bg-blue-200 rounded-[5px] hover:scale-110 transition-transform duration-400">
                 <img
                   src="/art/sql-server.png"
                   alt="SQL Server"
                   className="w-[70px]"
                 />
               </div>
-              <div className="flex justify-center items-center lg:w-[150px] lg:h-[150px]  w-[80px] h-[80px] bg-white rounded-[5px]">
+              <div className="flex justify-center items-center lg:w-[150px] lg:h-[150px] shadow-md  w-[80px] h-[80px] bg-white rounded-[5px] hover:scale-110 transition-transform duration-400">
                 <img src="/art/git.svg" alt="Git" />
               </div>
-              <div className="flex justify-center items-center lg:w-[150px] lg:h-[150px]  w-[80px] h-[80px] bg-blue-50 rounded-[5px]">
+              <div className="flex justify-center items-center lg:w-[150px] lg:h-[150px] shadow-md   w-[80px] h-[80px] bg-blue-50 rounded-[5px] hover:scale-110 transition-transform duration-400">
                 <img src="/art/tailwind.svg" alt="Tailwind CSS" />
               </div>
-              <div className="flex justify-center items-center lg:w-[150px] lg:h-[150px]  w-[80px] h-[80px] bg-orange-200 rounded-[5px]">
+              <div className="flex justify-center items-center lg:w-[150px] lg:h-[150px] shadow-md  w-[80px] h-[80px] bg-orange-200 rounded-[5px] hover:scale-110 transition-transform duration-400">
                 <img src="/art/figma.svg" alt="Figma" />
               </div>
             </div>
@@ -226,11 +231,13 @@ function App() {
           <h1 className=" hidden md:flex sm:hidden  bg-orange rounded-[5px] pb-1 px-2 max-w-max text-lg  my-10 mt-20 mx-auto">
             My Project
           </h1>
-          <div className="mt-3 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 lg:gap-x-20 lg:gap-y-10">
-            <div className="w-[300px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[400px]  ">
-              <img src="/art/colmar.gif" />
+          <div className="mt-10 w-max-full grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 lg:gap-x-10 lg:gap-y-10">
+            <div className=" w-[300px] h-auto  bg-yellow-100 rounded-md flex  flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[350px]  hover:scale-110 transition-transform duration-400">
+              <video  className="w-full h-auto rounded-md"  autoPlay loop muted playsInline>
+                <source src="/art/colmar.mp4" type="video/mp4" />
+              </video>
 
-              <div className="mt-2">
+              <div className="mt-2 w-full">
                 <h2>Colmar Academy</h2>
                 <h2 className=" flex items-center">
                   Stack:
@@ -274,10 +281,12 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="w-[300px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[400px] ">
-              <img src="/art/dragon.gif" />
+            <div className=" w-[300px] h-auto bg-yellow-100 rounded-md flex  flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[350px] hover:scale-110 transition-transform duration-400">
+              <video  className="w-full h-auto rounded-md"  autoPlay loop muted playsInline>
+                <source src="/art/dragon-ball.mp4" type="video/mp4" />
+              </video>
 
-              <div className="mt-2">
+              <div className="mt-2 w-full">
                 <h2>Dragon Ball</h2>
                 <h2 className=" flex items-center">
                   Stack:
@@ -323,10 +332,12 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="w-[300px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[400px]">
-              <img src="/art/mini.gif" />
+            <div className=" w-[300px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[350px] hover:scale-110 transition-transform duration-400">
+              <video  className="w-full h-auto rounded-md"  autoPlay loop muted playsInline>
+                <source src="/art/miniproject.mp4" type="video/mp4" />
+              </video>
 
-              <div className="mt-2">
+              <div className="mt-2 w-full">
                 <h2>Note App</h2>
                 <h2 className=" flex items-center">
                   Stack:
@@ -370,10 +381,12 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="w-[300px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[400px] ">
-              <img src="/art/reactAssessment.gif" />
+            <div  className=" w-[300px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[350px]  hover:scale-110 transition-transform duration-400">
+              <video  className="w-full h-auto rounded-md"  autoPlay loop muted playsInline>
+                <source src="/art/React-Assessment.mp4" type="video/mp4" />
+              </video>
 
-              <div className="mt-2">
+              <div className="mt-2 w-full">
                 <h2>React Assessment</h2>
                 <h2 className=" flex items-center">
                   Stack:
@@ -417,10 +430,12 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="w-[300px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[400px]">
-              <img src="/art/Spicy-Cobra.gif" />
+            <div className=" w-[300px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[350px] hover:scale-110 transition-transform duration-400">
+              <video  className="w-full h-auto rounded-md"  autoPlay loop muted playsInline>
+                <source src="/art/Spicy-Cobra.mp4" type="video/mp4" />
+              </video>
 
-              <div className="mt-2">
+              <div className="mt-2 w-full">
                 <h2>Spicy Cobra</h2>
                 <h2 className=" flex items-center">
                   Stack:
