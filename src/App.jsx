@@ -453,6 +453,7 @@ function App() {
                 </div>
               </div>
             </div>
+
             <div className=" w-[300px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[350px] hover:scale-110 transition-transform duration-400">
               <video
                 className="w-full h-auto rounded-md"
@@ -508,7 +509,65 @@ function App() {
                 </div>
               </div>
             </div>
+
+            <div className=" w-[300px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[350px] hover:scale-110 transition-transform duration-400">
+              <video
+                className="w-full h-auto rounded-md"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source src="/art/Spotify-Clone.mp4" type="video/mp4" />
+              </video>
+
+              <div className="mt-2 w-full">
+                <h2>Spicy Cobra</h2>
+                <h2 className=" flex items-center">
+                  Stack:
+                  <span className="lg:text-[20px] text-[18px] text-blue-800 ">
+                    ReactJS,API,Tailwind
+                  </span>
+                </h2>
+                <h2 className=" flex items-center">
+                  Responsive:
+                  <span className="lg:text-[20px] text-[18px] text-blue-800 ">
+                    Desktop,Mobile
+                  </span>
+                </h2>
+                <div className="flex gap-4 justify-center items-center">
+                  <a
+                    href="https://spotify-clone-three-ashy.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-yello hover:bg-amber-600  rounded-md px-[1.5rem]   max-w-[10rem] h-[2rem] lg:h-[3rem]  flex items-center mt-2"
+                  >
+                    <span className="gap-2 flex justify-center items-center">
+                      <h3>Link</h3>
+                      <img src="/art/link.svg" alt="link" className="w-5 h-5" />
+                    </span>
+                  </a>
+                  <a
+                    href="https://github.com/SsuaA1911/spotify-clone"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-yello hover:bg-amber-600  rounded-md px-[1.5rem]   max-w-[10rem] h-[2rem] lg:h-[3rem]  flex items-center mt-2"
+                  >
+                    <span className="gap-2 flex justify-center items-center">
+                      <h3>Github</h3>
+                      <img
+                        src="/art/git.svg"
+                        alt="GitHub"
+                        className="w-5 h-5"
+                      />
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
           </div>
+
         </div>
       </main>
 
@@ -564,6 +623,7 @@ function App() {
                     />
                   </div>
                 </a>
+                
               </div>
             <div className="flex justify-center items-center gap-2 mt-4">
               <input
