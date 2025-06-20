@@ -454,7 +454,7 @@ function App() {
               </div>
             </div>
 
-            <div className=" w-[300px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[350px] hover:scale-110 transition-transform duration-400">
+            <div className=" w-[300px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[350px] hover:scale-110 transition-transform duration-400 ">
               <video
                 className="w-full h-auto rounded-md"
                 autoPlay
@@ -465,12 +465,12 @@ function App() {
                 <source src="/art/Spicy-Cobra.mp4" type="video/mp4" />
               </video>
 
-              <div className="mt-2 w-full">
+              <div className="mt-2 w-full flex flex-wrap ">
                 <h2>Spicy Cobra</h2>
-                <h2 className=" flex items-center">
+                <h2 className=" py-1">
                   Stack:
-                  <span className="lg:text-[20px] text-[18px] text-blue-800 ">
-                    ReactJS,API,Tailwind
+                  <span className="lg:text-[20px] text-[18px] text-blue-800  whitespace-normal break-words">
+                    React.JS, API, Tailwind, Node.js
                   </span>
                 </h2>
                 <h2 className=" flex items-center">
@@ -510,7 +510,7 @@ function App() {
               </div>
             </div>
 
-            <div className=" w-[300px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[350px] hover:scale-110 transition-transform duration-400">
+            <div className=" w-[300px] h-auto bg-yellow-100 rounded-md flex flex-col justify-center items-center mx-auto p-[1rem] shadow-lg lg:w-[350px] hover:scale-110 transition-transform duration-400 ">
               <video
                 className="w-full h-auto rounded-md"
                 autoPlay
@@ -521,17 +521,17 @@ function App() {
                 <source src="/art/Spotify-Clone.mp4" type="video/mp4" />
               </video>
 
-              <div className="mt-2 w-full">
-                <h2>Spicy Cobra</h2>
-                <h2 className=" flex items-center">
+              <div className="mt-2 w-full flex flex-wrap  ">
+                <h2 className="flex ">Spotify-clone</h2>
+                <h2 className=" py-1 ">
                   Stack:
-                  <span className="lg:text-[20px] text-[18px] text-blue-800 ">
-                    ReactJS,API,Tailwind
+                  <span className="lg:text-[20px] text-[18px] text-blue-800 whitespace-normal break-words ">
+                    Nex.JS, supabase, typescript, Tailwind
                   </span>
                 </h2>
                 <h2 className=" flex items-center">
                   Responsive:
-                  <span className="lg:text-[20px] text-[18px] text-blue-800 ">
+                  <span className="lg:text-[20px] text-[18px] text-blue-800 break-words whitespace-normal  ">
                     Desktop,Mobile
                   </span>
                 </h2>
